@@ -67,7 +67,7 @@ export default function Home() {
             <section id="sec-1">
                 <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
                     <div class="content text-center">
-                        <h1 class="text-white">Welcome to The Recipe Store</h1>                                                
+                        <h1 class="text-white">Welcome to The Recipe Store</h1>
                         <a href="#sec-2">
                             <div className="scroll-down" />
                         </a>
@@ -80,11 +80,11 @@ export default function Home() {
                 <div className='container'>
                     <div className="row">
                         <div className="col-12">
-                            
+
                             <div className="row">
                                 <div className="col-md-1 col-xs-1 col-sm-1" />
                                 <div className="col-md-10 col-xs-10 col-sm-10 d-flex justify-content-center header">
-                                    <img src={imgIcon} width={'50px'} height={'50px'}/>&nbsp;<h1>Recipes</h1>
+                                    <img src={imgIcon} width={'50px'} height={'50px'} />&nbsp;<h1>Recipes</h1>
                                 </div>
                                 <hr className="hr" style={{ height: '2px', color: '#0a90e8' }} />
                                 <div className="col-md-1 col-xs-1 col-sm-1" />
@@ -94,15 +94,15 @@ export default function Home() {
                                 <div className="col-md-3 col-xs-3 col-sm-3 buttons">
                                     <Link to='/recipe/add' target={"_blank"} className="button"><span><i class="fas fa-plus-circle"></i> &nbsp;&nbsp;&nbsp;Create Recipe</span></Link>
                                 </div>
-                                <div className="col-md-6 col-xs-6 col-sm-6"/>
+                                <div className="col-md-6 col-xs-6 col-sm-6" />
                             </div>
 
 
                             <div className="shadowBox">
-                            <div className="row">                                
-                                <div className="col-md-12 col-xs-12 col-sm-12 d-flex justify-content-center">
+                                <div className="row">
+                                    <div className="col-md-12 col-xs-12 col-sm-12 table-responsive overflow-auto d-flex justify-content-center">
                                         <table class="table table-hover">
-                                            <thead className="table-green">
+                                            <thead className="table-primary">
                                                 <tr>
                                                     <th scope="col">#</th>
                                                     <th scope="col">Recipe ID</th>
@@ -136,7 +136,7 @@ export default function Home() {
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
                     </div>
