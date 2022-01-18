@@ -4,7 +4,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from 'react-router-dom';
-import TypeIt from "typeit-react";
 import swl from 'sweetalert';
 import imgIcon from './images/recipe.png';
 import './styles.css';
@@ -137,15 +136,10 @@ export default function Home() {
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>
-                                
+                                </div>                                
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </section>
         </>
