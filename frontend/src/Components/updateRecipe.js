@@ -104,8 +104,7 @@ export default function UpdateRecipe(props) {
             const response = await axios.put(`http://localhost:5000/recipe/update/${id}`,
             { recipeId, recipeName, ingredients, description }
             );            
-            //refresh if success
-            // if (response.data.success)  window.location = "/";
+            //refresh page if success
             if (response.data.success) {                
                 toast.success("Recipe updated !");
                 // setTimeout to 3s and navigate back to home page
@@ -154,6 +153,7 @@ export default function UpdateRecipe(props) {
                                                 <div className="formError" style={{ marginTop: '20px' }}>
                                                     <div className="col-1" />
                                                     <div className="col-1">
+                                                        {/* get all recipe continuously */}
                                                         {errors.length > 0
                                                             ? errors.map((i, index) => {
                                                                 return <span key={index}>{errors[index].msg}</span>;
