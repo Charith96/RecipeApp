@@ -93,7 +93,15 @@ section {
 
 /* Recipe table */
 
-.header h1,h2{
+.table{
+    overflow: auto;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.header h1,h2 {
     font-family: 'Poppins';
     font-size: 45px;
     font-weight: 600;
